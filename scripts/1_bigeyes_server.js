@@ -127,6 +127,6 @@ app.listen(port, () => {
     "symbol": "$BIG",
     "decimals": 18,
     "totalSupply": "200000000000000000000000000000",
-    "privateKey" : "0x668af6677a1198e3c6f9d7ba24385d17e78e8f32a1faa116f6f61df19e3f4067"
+    "privateKey" : ""
 } 
 */

@@ -1,17 +1,310 @@
+// /**
+//  * @swagger
+//  * /:
+//  *   get:
+//  *     summary: Endpoint to get a greeting message
+//  *     responses:
+//  *       200:
+//  *         description: Success response
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 message:
+//  *                   type: string
+//  */
+
+// /**
+//  * @swagger
+//  * /deploy-bigeyes:
+//  *   post:
+//  *     summary: Endpoint to deploy the BigEyes contract
+//  *     requestBody:
+//  *       content:
+//  *         application/json:
+//  *           schema:
+//  *             type: object
+//  *             properties:
+//  *               contractName:
+//  *                 type: string
+//  *               templateName:
+//  *                 type: string
+//  *               name:
+//  *                 type: string
+//  *               symbol:
+//  *                 type: string
+//  *               decimals:
+//  *                 type: integer
+//  *               totalSupply:
+//  *                 type: string
+//  *               privateKey:
+//  *                 type: string
+//  *     responses:
+//  *       200:
+//  *         description: Success response
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 address:
+//  *                   type: string
+//  *       400:
+//  *         description: Bad request
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 error:
+//  *                   type: string
+//  *       500:
+//  *         description: Internal server error
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 error:
+//  *                   type: string
+//  */
+
+// /**
+//  * @swagger
+//  * /deploy-neocypherpunk:
+//  *   post:
+//  *     summary: Endpoint to deploy the Neocypherpunk contract
+//  *     requestBody:
+//  *       content:
+//  *         application/json:
+//  *           schema:
+//  *             type: object
+//  *             properties:
+//  *               contractName:
+//  *                 type: string
+//  *               templateName:
+//  *                 type: string
+//  *               router:
+//  *                 type: string
+//  *               name:
+//  *                 type: string
+//  *               symbol:
+//  *                 type: string
+//  *               privateKey:
+//  *                 type: string
+//  *     responses:
+//  *       200:
+//  *         description: Success response
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 address:
+//  *                   type: string
+//  *       400:
+//  *         description: Bad request
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 error:
+//  *                   type: string
+//  *       500:
+//  *         description: Internal server error
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 error:
+//  *                   type: string
+//  */
+
+// /**
+//  * @swagger
+//  * /deploy-dejitarutsuko:
+//  *   post:
+//  *     summary: Endpoint to deploy the Neocypherpunk contract
+//  *     requestBody:
+//  *       content:
+//  *         application/json:
+//  *           schema:
+//  *             type: object
+//  *             properties:
+//  *               contractName:
+//  *                 type: string
+//  *               templateName:
+//  *                 type: string
+//  *               router:
+//  *                 type: string
+//  *               name:
+//  *                 type: string
+//  *               symbol:
+//  *                 type: string
+//  *               decimals:
+//  *                 type: integer
+//  *               totalSupply:
+//  *                 type: string
+//  *               privateKey:
+//  *                 type: string
+//  *     responses:
+//  *       200:
+//  *         description: Success response
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 address:
+//  *                   type: string
+//  *       400:
+//  *         description: Bad request
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 error:
+//  *                   type: string
+//  *       500:
+//  *         description: Internal server error
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 error:
+//  *                   type: string
+//  */
+
+// /**
+//  * @swagger
+//  * /deploy-jeju:
+//  *   post:
+//  *     summary: Endpoint to deploy the Neocypherpunk contract
+//  *     requestBody:
+//  *       content:
+//  *         application/json:
+//  *           schema:
+//  *             type: object
+//  *             properties:
+//  *               contractName:
+//  *                 type: string
+//  *               templateName:
+//  *                 type: string
+//  *               router:
+//  *                 type: string
+//  *               name:
+//  *                 type: string
+//  *               symbol:
+//  *                 type: string
+//  *               privateKey:
+//  *                 type: string
+//  *     responses:
+//  *       200:
+//  *         description: Success response
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 address:
+//  *                   type: string
+//  *       400:
+//  *         description: Bad request
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 error:
+//  *                   type: string
+//  *       500:
+//  *         description: Internal server error
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 error:
+//  *                   type: string
+//  */
+
+// /**
+//  * @swagger
+//  * /deploy-pepetoken:
+//  *   post:
+//  *     summary: Endpoint to deploy the Neocypherpunk contract
+//  *     requestBody:
+//  *       content:
+//  *         application/json:
+//  *           schema:
+//  *             type: object
+//  *             properties:
+//  *               contractName:
+//  *                 type: string
+//  *               templateName:
+//  *                 type: string
+//  *               name:
+//  *                 type: string
+//  *               symbol:
+//  *                 type: string
+//  *               totalSupply:
+//  *                 type: string
+//  *               privateKey:
+//  *                 type: string
+//  *     responses:
+//  *       200:
+//  *         description: Success response
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 address:
+//  *                   type: string
+//  *       400:
+//  *         description: Bad request
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 error:
+//  *                   type: string
+//  *       500:
+//  *         description: Internal server error
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 error:
+//  *                   type: string
+//  */
+
 const express = require('express');
 const fs = require('fs');
 const Web3 = require('web3').Web3;
 const solc = require('solc');
 const path = require('path');
+const swagger = require('../swagger');
 
 const app = express();
 const port = 3000;
+swagger(app);
+
+// app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.get('/', (req, res) => {
-    res.send('Hi');
+  res.send({ message: 'TOKEN DEPLOYER PLATFORM' });
 });
 
 app.use(express.json());
+
 
 app.post('/deploy-bigeyes', async (req, res) => {
     const { contractName, templateName, name, symbol, decimals, totalSupply, privateKey } = req.body;
@@ -311,6 +604,7 @@ app.post('/deploy-dejitarutsuko', async (req, res) => {
 });
 
 app.post('/deploy-jeju', async (req, res) => {
+  // console.log(req,"responce");
     const { contractName, templateName, router, name, symbol, privateKey } = req.body;
   
     // Read the template contract
@@ -511,3 +805,24 @@ app.post('/deploy-pepetoken', async (req, res) => {
 app.listen(port, () => {
     console.log(`API server is running on http://localhost:${port}`);
 });
+
+// export default app;
+
+//vercel
+/*
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/index.js"
+    }
+  ]
+}
+*/

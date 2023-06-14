@@ -124,6 +124,6 @@ app.listen(port, () => {
   "router" : "0xD99D1c33F9fC3444f8101754aBC46c52416550D1",
   "name": "Neo Cypherpunk",
   "symbol": "$NEOPUNK",
-  "privateKey" : "0x668af6677a1198e3c6f9d7ba24385d17e78e8f32a1faa116f6f61df19e3f4067"
+  "privateKey" : ""
 }
 */

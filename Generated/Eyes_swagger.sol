@@ -623,7 +623,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 pragma solidity 0.8.18;
 
 
-contract EYES is ERC20, Ownable {
+contract Eyes_swagger is ERC20, Ownable {
     uint8 private _decimals;
     mapping(address => bool) public blacklisted;
     event LogAddToBlacklist(address[] indexed blacklisted);
