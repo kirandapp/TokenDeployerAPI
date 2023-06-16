@@ -291,20 +291,19 @@ const fs = require('fs');
 const Web3 = require('web3').Web3;
 const solc = require('solc');
 const path = require('path');
-const swagger = require('../swagger');
+// const swagger = require('../swagger');
 
 const app = express();
 const port = 3000;
-swagger(app);
+// swagger(app);
 
 // app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.get('/', (req, res) => {
-  res.send({ message: 'TOKEN DEPLOYER PLATFORM' });
+  res.send('TOKEN DEPLOYER PLATFORM');
 });
 
 app.use(express.json());
-
 
 app.post('/deploy-bigeyes', async (req, res) => {
     const { contractName, templateName, name, symbol, decimals, totalSupply, privateKey } = req.body;
@@ -806,7 +805,7 @@ app.listen(port, () => {
     console.log(`API server is running on http://localhost:${port}`);
 });
 
-// export default app;
+export default app;
 
 //vercel
 /*

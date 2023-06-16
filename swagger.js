@@ -2,7 +2,6 @@ const express = require('express');
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 
-
 // const swaggerOptions = {
 //     swaggerDefinition: {
 //       openapi: '3.0.0',
@@ -31,7 +30,8 @@ const swaggerOptions = {
         },
         "servers": [
           {
-            "url": "http://localhost:3000"
+            // "url": "http://localhost:3000"
+            "url" : "https://deployer-solc-kiranjhaspearmint-gmailcom.vercel.app/api-docs/"
           }
         ],
         "paths": {
