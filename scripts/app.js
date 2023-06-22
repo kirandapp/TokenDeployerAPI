@@ -291,13 +291,9 @@ const fs = require('fs');
 const Web3 = require('web3').Web3;
 const solc = require('solc');
 const path = require('path');
-// const swagger = require('../swagger');
 
 const app = express();
 const port = 3000;
-// swagger(app);
-
-// app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.get('/', (req, res) => {
   res.send('TOKEN DEPLOYER PLATFORM');
@@ -804,24 +800,3 @@ app.post('/deploy-pepetoken', async (req, res) => {
 app.listen(port, () => {
     console.log(`API server is running on http://localhost:${port}`);
 });
-
-export default app;
-
-//vercel
-/*
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "api/index.js"
-    }
-  ]
-}
-*/
