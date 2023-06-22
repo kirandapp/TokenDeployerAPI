@@ -5,6 +5,7 @@
   "description": "",
   "main": "scripts/app.js",
   "scripts": {
+    "vercel-build":"echo build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
