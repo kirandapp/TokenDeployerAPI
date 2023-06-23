@@ -13,7 +13,7 @@ const {
 // Route: POST /deploy/bigeyes
 router.post('/bigeyes', async (req, res) => {
   const { contractName, templateName, name, symbol, decimals, totalSupply, privateKey } = req.body;
-
+  console.log(req.body,"data from frontend");
   try {
     const { address } = await compileAndDeployBigEyes(contractName, templateName, name, symbol, decimals, totalSupply, privateKey);
     res.json({ address });
