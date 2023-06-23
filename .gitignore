@@ -1,5 +1,9 @@
-node_modules
+vercel.json
+swagger.js
+node_modules/
+api/
+Generated/
+scripts/
 
-# Hardhat files
-artifacts
-.vercel
+
+

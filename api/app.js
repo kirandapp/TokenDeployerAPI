@@ -109,13 +109,10 @@ app.get('/', (req, res) => {
 });
 
 app.use(express.json());
-
-const contractCache = {}; // Object to store contract source code
-const artifactsCache = {}; // Object to store contract artifacts
 const contractArtifacts = {};
 // app.post('/api/deploy-bigeyes', async (req, res) => {
 
-app.post('/api/deploy-bigeyes', async (req, res) => {
+app.post('/deploy-bigeyes', async (req, res) => {
   const { contractName, templateName, name, symbol, decimals, totalSupply, privateKey } = req.body;
 
   // Check if contract artifacts already exist
